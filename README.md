@@ -22,7 +22,7 @@
 
 ### 🧩 İlgi Alanlarım  
 <p align="center">
-  🌐 Web Siteleri &nbsp; | &nbsp; ⚙️ CNC Sistemleri &nbsp; | &nbsp; 🖨️ 3D Printer
+  🌐 HTML Web  &nbsp; | &nbsp; ⚙️ CNC Slicer &nbsp; | &nbsp; 🖨️ 3D Printer
 </p>
 
 ---
@@ -48,5 +48,5 @@
 </h3>
 
 <p align="center" style="color:gray; font-size:12px;">
-  <i>“Neon minds create bright realities.”</i>
+  <i>“powered by artificial intelligence.”</i>
 </p>
