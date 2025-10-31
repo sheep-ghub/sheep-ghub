@@ -1,5 +1,4 @@
 <!-- 🌌 SheepDev GitHub Profile README -->
-![Header](header.svg)
 
 <p align="center">
   <img src="header.svg" width="100%" alt="SheepDev Header Animation" />
