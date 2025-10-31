@@ -1,21 +1,119 @@
-<svg width="100%" height="250" xmlns="http://www.w3.org/2000/svg">
+<svg width="1080" height="360" viewBox="0 0 1080 360" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#00eaff" />
-      <stop offset="100%" stop-color="#7a00ff" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d00ff" />
+      <stop offset="100%" stop-color="#00c8ff" />
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0 L0 0 0 40" fill="none" stroke="url(#grad)" stroke-width="0.5" />
-    </pattern>
+    <filter id="blur-bg">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+      text {
+        font-family: 'Orbitron', sans-serif;
+        fill: url(#grad);
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+
+      .title {
+        font-size: 64px;
+        filter: drop-shadow(0 0 10px #00c8ff);
+        animation: neonGlow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes neonGlow {
+        from { filter: drop-shadow(0 0 5px #6d00ff); }
+        to { filter: drop-shadow(0 0 20px #00c8ff); }
+      }
+
+      .typing {
+        font-size: 28px;
+        fill: #b0ffff;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(30, end), blink 0.8s step-end infinite alternate;
+      }
+
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+
+      .glitch {
+        font-size: 26px;
+        fill: #fff;
+        animation: glitch 2s infinite;
+      }
+
+      @keyframes glitch {
+        0% { transform: translate(0); }
+        20% { transform: translate(-2px, 2px); }
+        40% { transform: translate(2px, -2px); }
+        60% { transform: translate(-1px, 1px); }
+        80% { transform: translate(1px, -1px); }
+        100% { transform: translate(0); }
+      }
+
+      .fade {
+        font-size: 26px;
+        fill: #c8eaff;
+        opacity: 0;
+        animation: fadeIn 3s ease forwards;
+        animation-delay: 3s;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .icons {
+        font-family: sans-serif;
+        font-size: 18px;
+        fill: #fff;
+      }
+
+      .icon {
+        transition: all 0.3s ease;
+        filter: drop-shadow(0 0 3px #00c8ff);
+      }
+
+      .icon:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 10px #6d00ff);
+      }
+    </style>
   </defs>
 
-  <rect width="100%" height="100%" fill="black"/>
-  <rect width="100%" height="100%" fill="url(#grid)">
-    <animateTransform attributeName="transform" type="translate" from="0 0" to="40 40" dur="10s" repeatCount="indefinite"/>
-  </rect>
+  <rect width="1080" height="360" rx="24" fill="rgba(20,20,40,0.6)" filter="url(#blur-bg)" />
 
-  <text x="50%" y="60%" font-size="38" text-anchor="middle" font-family="Orbitron" fill="url(#grad)">
-    <tspan dy="-10">SheepDev</tspan>
-    <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite" />
-  </text>
+  <text x="540" y="120" class="title">SheepDev 🐑</text>
+  <text x="540" y="180" class="typing">HTML Web Developer</text>
+  <text x="540" y="220" class="glitch">Active CNC Developer</text>
+  <text x="540" y="260" class="fade">3DMARK Developer</text>
+
+  <a href="https://discord.com/users/1055167462146048040" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" x="350" y="300" width="30" height="30" class="icon"/>
+  </a>
+  <a href="https://instagram.com/cde_.07" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" x="400" y="300" width="30" height="30" class="icon"/>
+  </a>
+  <a href="https://steamcommunity.com/id/ArcBurst/" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/steam.svg" x="450" y="300" width="30" height="30" class="icon"/>
+  </a>
+  <a href="mailto:candemirerdogan0077@gmail.com" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" x="500" y="300" width="30" height="30" class="icon"/>
+  </a>
+  <a href="https://open.spotify.com/user/31akqle3ptbnlhfqkhz4dtwc65fi?si=39d77c7480e84d40" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/spotify.svg" x="550" y="300" width="30" height="30" class="icon"/>
+  </a>
+  <a href="https://guns.lol/_sheep_" target="_blank">
+    <image href="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linktree.svg" x="600" y="300" width="30" height="30" class="icon"/>
+  </a>
 </svg>
