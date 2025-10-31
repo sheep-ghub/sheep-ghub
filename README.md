@@ -1,4 +1,5 @@
 <!-- 🌌 SheepDev GitHub Profile README -->
+![Header](header.svg)
 
 <p align="center">
   <img src="header.svg" width="100%" alt="SheepDev Header Animation" />
@@ -33,6 +34,8 @@
   <a href="https://instagram.com/cde_.07" target="_blank"><img src="https://skillicons.dev/icons?i=instagram" width="48" /></a>
   <a href="https://steamcommunity.com/id/ArcBurst/" target="_blank"><img src="https://skillicons.dev/icons?i=steam" width="48" /></a>
   <a href="mailto:candemirerdogan0077@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" width="48" /></a>
+  <a href="https://open.spotify.com/user/31akqle3ptbnlhfqkhz4dtwc65fi?si=90c26e50b6cf4da6"><img <img width="48" height="48" alt="image" src="https://github.com/user-attachments/assets/16a128fe-3292-4c31-a4d7-44c80912fa7d" />
+
 </p>
 
 ---
