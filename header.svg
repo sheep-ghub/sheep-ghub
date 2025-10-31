@@ -1,0 +1,109 @@
+<svg width="1080" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a00ff"></stop>
+      <stop offset="100%" stop-color="#00d9ff"></stop>
+    </linearGradient>
+
+    <style>
+      text {
+        font-family: 'Segoe UI', 'Orbitron', sans-serif;
+        text-anchor: middle;
+        dominant-baseline: middle;
+      }
+
+      .bg {
+        fill: rgba(25,25,45,0.75);
+        stroke: rgba(180,180,255,0.1);
+        stroke-width: 1;
+        backdrop-filter: blur(10px);
+      }
+
+      .title {
+        font-size: 60px;
+        fill: url(#grad);
+        animation: glow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from { filter: drop-shadow(0 0 4px #00d9ff); }
+        to { filter: drop-shadow(0 0 18px #7a00ff); }
+      }
+
+      .typing {
+        font-size: 26px;
+        fill: #baf6ff;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 3s steps(25, end) forwards, blink .8s step-end infinite alternate;
+      }
+
+      @keyframes typing { from { width: 0 } to { width: 330px } }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      .glitch {
+        font-size: 24px;
+        fill: #ffffff;
+        animation: glitch 1.5s infinite;
+      }
+
+      @keyframes glitch {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(1px, -1px); }
+        50% { transform: translate(-1px, 1px); }
+        75% { transform: translate(1px, 1px); }
+        100% { transform: translate(0, 0); }
+      }
+
+      .fade {
+        font-size: 24px;
+        fill: #d4faff;
+        opacity: 0;
+        animation: fadeIn 3s ease forwards;
+        animation-delay: 3.5s;
+      }
+
+      @keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+      .icon {
+        transition: 0.3s;
+        filter: drop-shadow(0 0 3px #00d9ff);
+      }
+
+      .icon:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 10px #7a00ff);
+      }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" width="1080" height="360" rx="24"></rect>
+
+  <!-- text -->
+  <text x="540" y="120" class="title">SheepDev 🐑</text>
+  <text x="540" y="180" class="typing">HTML Web Developer</text>
+  <text x="540" y="220" class="glitch">Active CNC Developer</text>
+  <text x="540" y="260" class="fade">3DMARK Developer</text>
+
+  <!-- icons -->
+  <a href="https://discord.com/users/1055167462146048040" target="_blank">
+    <text x="400" y="320" font-size="20" class="icon">💬</text>
+  </a>
+  <a href="https://instagram.com/cde_.07" target="_blank">
+    <text x="440" y="320" font-size="20" class="icon">📸</text>
+  </a>
+  <a href="https://steamcommunity.com/id/ArcBurst/" target="_blank">
+    <text x="480" y="320" font-size="20" class="icon">🎮</text>
+  </a>
+  <a href="mailto:candemirerdogan0077@gmail.com" target="_blank">
+    <text x="520" y="320" font-size="20" class="icon">✉️</text>
+  </a>
+  <a href="https://open.spotify.com/user/31akqle3ptbnlhfqkhz4dtwc65fi?si=39d77c7480e84d40" target="_blank">
+    <text x="560" y="320" font-size="20" class="icon">🎵</text>
+  </a>
+  <a href="https://guns.lol/_sheep_" target="_blank">
+    <text x="600" y="320" font-size="20" class="icon">🔗</text>
+  </a>
+</svg>
